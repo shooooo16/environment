@@ -1,0 +1,23 @@
+# 今後複数の仮想マシンを作ることを想定して、それらをまとめるフォルダ（MyVagrant）を作る
+mkdir MyVagrant
+
+# MyVagrantに移動する
+cd MyVagrant
+
+# 仮想マシンを作るフォルダを作る（MyCentOS）
+mkdir MyCentOS
+
+# MyCentOSに移動する
+cd MyCentOS
+
+# 仮想マシン設定用のVagrantfileを作る
+vagrant init bento/centos-6.8
+
+# Vagrantfileを編集して仮想マシンのIPアドレスを192.168.33.10にする
+(動画をご覧ください)
+
+# 仮想マシンを起動する（少し時間かかります）
+vagrant up
+
+# 仮想マシンの状態を確認する
+vagrant status
